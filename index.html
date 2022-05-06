@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>homework#5</title>
+        <title>homework#6</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -399,19 +399,79 @@
                         </li>
                     </ul>
                 </div>
-
+                <form class="subscribe">
+                  <p class="title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                  <div class="subscribe-field" role="group">
+                    <input
+                      class="subscribe-email"
+                      type="email"
+                      name="subscribe"
+                      placeholder="E-mail"
+                    />
+                    <button class="send" type="submit">
+                      <span class="send-text">Подписаться</span>
+                      <svg class="send-icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-send"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
             </div>
         </footer>
                   <!-- Modal window -->
                   <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="button-close" data-modal-close>
-                        <svg width="30px" height="30px">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
+                          <div class="modal">
+                            <button class="button-close" data-modal-close>
+                              <svg width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-close-black"></use>
+                              </svg>
                     </button>
+                  <form class="form-modal">
+                    <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+                    <label class="form-label">
+                      <input class="form-input" type="text" name="name" />
+                      <span class="form-text">Имя</span>
+                      <svg class="icon-modal" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-person"></use>
+                      </svg>
+                    </label>
+                    <label class="form-label">
+                      <input class="form-input" type="tel" name="tel" />
+                      <span class="form-text">Телефон</span>
+                      <svg class="icon-modal" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                    </label>
+                    <label class="form-label">
+                      <input class="form-input" type="email" name="email" />
+                      <span class="form-text">Почта</span>
+                      <svg class="icon-modal" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-email"></use>
+                      </svg>
+                    </label>
+                    <label class="comment-label">
+                      <span class="form-text">Коментарий</span>
+                      <textarea
+                        class="form-comment"
+                        name="comment"
+                        placeholder="Введите текст"
+                      ></textarea>
+                    </label>
+                    <label class="checkbox-label">
+                      <input
+                        class="checkbox-input"
+                        type="checkbox"
+                        name="agreement"
+                        checked
+                      />
+                      <span class="checkbox-agreement"></span>
+                      Соглашаюсь с рассылкой и принимаю
+                      <a class="checkbox-condition" href="">Условия договора</a>
+                    </label>
+          
+                    <button class="form-button" type="submit">Отправить</button>
+                  </form>
                 </div>
-            </div>
             <script src="./js/modal.js"></script>
         </body>
     </html>
