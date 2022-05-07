@@ -494,6 +494,9 @@ h2 {
   display: block;
   margin-bottom: 20px;
 }
+.address-footer{
+  flex-grow: 1;
+}
 .adress-list {
   padding-left: 0px;
 }
@@ -659,7 +662,8 @@ transition-timing-function: var(--transition-timing-function);
   color: var(--accent-color);
 }
 .send {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
   width: 200px;
   height: 50px;
   margin-left: 12px;
@@ -667,16 +671,17 @@ transition-timing-function: var(--transition-timing-function);
   border: 2px solid transparent;
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
+  justify-content: center;
 }
 .send:focus {
   outline: none;
   border: 2px solid var(--br-email-footer);
 }
 .send-text {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 29px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   color: var(--primari-white-color);
   font-weight: 700;
   font-size: 16px;
@@ -684,11 +689,11 @@ transition-timing-function: var(--transition-timing-function);
   letter-spacing: 0.06em;
 }
 .send-icon {
-  position: absolute;
-  right: 18px;
+  /* position: absolute; */
+  /* right: 18px;
   top: 50%;
-  transform: translateY(-50%);
-  margin-left: 10px;
+  transform: translateY(-50%); */
+  margin-left: 10px; 
 }
 /* PORTFOLIO */
 /* Filter */
@@ -829,13 +834,11 @@ transition-timing-function: var(--transition-timing-function);
   background-color: #fff;
 }
 .button-close {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: absolute; 
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-right: 8px;
   border-radius: 50%;
   cursor: pointer;
   border: none;
@@ -857,8 +860,7 @@ transition-timing-function: var(--transition-timing-function);
 .form-modal {
   display: block;
   width: 100%;
-  height: calc(100%-30px);
-  padding: 40px 40px 120px 40px;
+  padding: 40px;
 }
 .title-modal {
   width: 448px;
@@ -878,7 +880,6 @@ transition-timing-function: var(--transition-timing-function);
   margin-bottom: 10px;
 }
 .form-text {
-  position: absolute;
   top: 0;
   left: 0;
   margin-bottom: 10px;
@@ -890,8 +891,7 @@ transition-timing-function: var(--transition-timing-function);
   
 }
 .form-input {
-  position: absolute;
-  width: 448px;
+    width: 448px;
   height: 40px;
   left: 0;
   bottom: 0;
@@ -938,7 +938,6 @@ transition-timing-function: var(--transition-timing-function);
   
 }
 .form-comment {
-  position: absolute;
   resize: none;
   left: 0;
   bottom: 0;
@@ -961,11 +960,11 @@ transition-timing-function: var(--transition-timing-function);
   color: var(--form-color);
 }
 .checkbox-label {
-  display: block;
-  padding-left: 22px;
-  margin-left: 14px;
+  display: flex;
   line-height: 1.71;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 .checkbox-input {
   width: 1px;
@@ -978,7 +977,6 @@ transition-timing-function: var(--transition-timing-function);
   cursor: pointer;
 }
 .checkbox-agreement {
-  position: absolute;
   width: 16px;
   height: 15px;
   margin: 4.5px;
@@ -986,11 +984,14 @@ transition-timing-function: var(--transition-timing-function);
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+ 
 }
 .checkbox-input:checked + .checkbox-agreement {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: var(--accent-color); 
+  border-color: var(--accent-color); 
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 16 15'  xmlns='http://www.w3.org/2000/svg'%3E%3Crect rx='2' fill='none'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L10.3169 8.49294L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-size: contain;
   background-size: contain;
   background-origin: border-box;
   transition: box-shadow 250ms var(--timing-function);
@@ -1013,10 +1014,16 @@ transition-timing-function: var(--transition-timing-function);
   cursor: pointer;
 }
 .form-button {
-  position: absolute;
+  /* position: absolute;
   bottom: 40px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
   width: 200px;
   height: 50px;
   cursor: pointer;
