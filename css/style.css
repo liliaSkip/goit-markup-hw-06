@@ -963,6 +963,7 @@ transition-timing-function: var(--transition-timing-function);
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  margin-left: 14px;
 }
 .checkbox-input {
   width: 1px;
@@ -1017,8 +1018,6 @@ transition-timing-function: var(--transition-timing-function);
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  
   width: 200px;
   height: 50px;
   cursor: pointer;
