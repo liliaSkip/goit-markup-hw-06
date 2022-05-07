@@ -826,11 +826,9 @@ transition-timing-function: var(--transition-timing-function);
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function),
-    scale 250ms var(--timing-function);
-
+  scale 250ms var(--timing-function);
   width: 528px;
   height: 581px;
-
   background-color: #fff;
 }
 .button-close {
@@ -985,7 +983,7 @@ transition-timing-function: var(--transition-timing-function);
   border-radius: 4px;
   cursor: pointer;
   display: block;
- 
+
 }
 .checkbox-input:checked + .checkbox-agreement {
   background-color: var(--accent-color); 
@@ -997,10 +995,6 @@ transition-timing-function: var(--transition-timing-function);
   transition: box-shadow 250ms var(--timing-function);
   cursor: pointer;
 }
-.checkbox-input:focus + .checkbox-agreement {
-  box-shadow: 0 0 0 0.2em var(--bg-icon);
-}
-
 .checkbox-condition {
   text-decoration: underline;
   color: var(--accent-color);
@@ -1013,6 +1007,7 @@ transition-timing-function: var(--transition-timing-function);
   box-shadow: 0 0 0 0.1em var(--accent-color);
   cursor: pointer;
 }
+
 .form-button {
   /* position: absolute;
   bottom: 40px;
